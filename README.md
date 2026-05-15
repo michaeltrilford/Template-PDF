@@ -27,8 +27,8 @@ Then open `http://127.0.0.1:13003`.
 Open the repo in your IDE and work from `src/`:
 
 - Replace the sample pages in `src/manuscript/pack.md`.
+- Use `Design.md` to inform the CSS variables and theme in `src/styles/pack.css`. It is not required, but it is helpful context when asking Codex to create or adjust a PDF theme.
 - Adjust foundational tokens and layout rules in `src/styles/pack.css`.
-- Use `Design.md` as the design reference for page size, tokens, typography, and preview behavior.
 - Keep source images in `src/assets/` and reference them from the manuscript.
 
 ## Install
