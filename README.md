@@ -54,7 +54,7 @@ The local preview uses `index.html`, which mirrors the sample pages from `src/ma
 
 ## Working With Codex
 
-This template works well with Codex because the browser preview gives fast feedback while you iterate on the manuscript, design tokens, and layout rules. Use Codex to adjust `src/manuscript/pack.md`, refine `src/styles/pack.css`, reload the local preview, and rebuild the final PDF when the layout is ready.
+This template works well with Codex because the browser preview gives fast feedback while you iterate on the manuscript, design tokens, and layout rules. The workflow is intentionally close to basic HTML and CSS: write the PDF structure in `src/manuscript/pack.md`, style it in `src/styles/pack.css`, reload the local preview, and rebuild the final PDF when the layout is ready.
 
 ## Build
 
