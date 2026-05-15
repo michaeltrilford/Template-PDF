@@ -58,7 +58,7 @@ The default design should feel neutral, reusable, and content-first. It should n
 - Simple cover, overview grid, feature page, and closing page examples.
 - Repeated content blocks are plain filled surfaces with no visible border.
 - Local browser preview scales the whole fixed page proportionally.
-- Example imagery uses the placeholder image in `src/assets/images/image.png`.
+- Example imagery uses the placeholder image in `src/assets/images/image.jpg`.
 
 ## Typography Tokens
 

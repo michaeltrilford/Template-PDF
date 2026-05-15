@@ -17,7 +17,7 @@ Then open `http://127.0.0.1:13003`.
 - `src/manuscript/pack.md`: example PDF pages.
 - `src/styles/pack.css`: page layout and print styling.
 - `Design.md`: plain grayscale design direction and CSS variable reference.
-- `src/assets/images/image.png`: placeholder image used by the example pages.
+- `src/assets/images/image.jpg`: placeholder image used by the example pages.
 - `scripts/build.py`: builds the full PDF and optimized PDF variants.
 - `scripts/optimize_pdf.py`: compresses images inside a built PDF.
 - `dist/`: generated PDF outputs.
@@ -50,7 +50,7 @@ npm run dev
 
 Then open `http://127.0.0.1:13003`.
 
-The local preview uses `index.html`, which mirrors the sample pages from `src/manuscript/pack.md` and uses the placeholder image in `src/assets/images/image.png`.
+The local preview uses `index.html`, which mirrors the sample pages from `src/manuscript/pack.md` and uses the placeholder image in `src/assets/images/image.jpg`.
 
 ## Working With Codex
 

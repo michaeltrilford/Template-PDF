@@ -48,7 +48,7 @@ lang: en
     </ul>
   </div>
   <div class="image-board">
-    <img class="feature-shot" src="../assets/images/image.png" alt="Placeholder page example">
+    <img class="feature-shot" src="../assets/images/image.jpg" alt="Placeholder page example">
   </div>
 </section>
 
