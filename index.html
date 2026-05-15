@@ -10,7 +10,7 @@
     <section class="slide cover">
       <div class="kicker">Template</div>
       <h1>PDF Template Pack</h1>
-      <p class="lede">A clean starting point for a presentation-style PDF with reusable page layouts, placeholder imagery, and optimization commands.</p>
+      <p class="intro">A clean starting point for a presentation-style PDF with reusable page layouts, placeholder imagery, and optimization commands.</p>
     </section>
 
     <section class="slide overview">
@@ -75,7 +75,15 @@
     </section>
     <script>
       const setPreviewScale = () => {
-        const scale = Math.min((window.innerWidth - 48) / 1280, (window.innerHeight - 48) / 720, 1);
+        const slide = document.querySelector('.slide');
+        const styles = getComputedStyle(document.documentElement);
+        const previewPadding = parseFloat(styles.getPropertyValue('--preview-page-padding')) || 0;
+        const pageWidth = parseFloat(getComputedStyle(slide).width);
+        const pageHeight = parseFloat(getComputedStyle(slide).height);
+        const availableWidth = window.innerWidth - previewPadding * 2;
+        const availableHeight = window.innerHeight - previewPadding * 2;
+        const scale = Math.min(availableWidth / pageWidth, availableHeight / pageHeight, 1);
+
         document.documentElement.style.setProperty('--preview-scale', Math.max(scale, 0.1).toString());
       };
 

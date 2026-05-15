@@ -7,7 +7,7 @@ lang: en
 <section class="slide cover">
   <div class="kicker">Template</div>
   <h1>PDF Template Pack</h1>
-  <p class="lede">A clean starting point for a presentation-style PDF with reusable page layouts, placeholder imagery, and optimization commands.</p>
+  <p class="intro">A clean starting point for a presentation-style PDF with reusable page layouts, placeholder imagery, and optimization commands.</p>
 </section>
 
 <section class="slide overview">

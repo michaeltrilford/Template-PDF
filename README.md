@@ -12,7 +12,7 @@ Reusable presentation-style PDF template built with Vivliostyle.
 - `scripts/optimize_pdf.py`: compresses images inside a built PDF.
 - `dist/`: generated PDF outputs.
 
-## Build
+## Install
 
 Install the project dependencies first:
 
@@ -32,6 +32,8 @@ npm run dev
 Then open `http://127.0.0.1:13003`.
 
 The local preview uses `index.html`, which mirrors the sample pages from `src/manuscript/pack.md` and uses the placeholder image in `src/assets/images/image.png`.
+
+## Build
 
 Run the full build:
 
