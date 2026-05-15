@@ -90,5 +90,6 @@ The default design should feel neutral, reusable, and content-first. It should n
 
 ## Output
 
-- Main PDF: `dist/template-pack.pdf`.
-- Optimized variants: `dist/template-pack-q60.pdf`, `dist/template-pack-q72.pdf`, and `dist/template-pack-q85.pdf`.
+- Base PDF: `dist/base/template-pack.pdf`.
+- Curated versions: configured in `scripts/build.py`.
+- Optimized variants: `-q60`, `-q72`, and `-q85` files inside each output folder.

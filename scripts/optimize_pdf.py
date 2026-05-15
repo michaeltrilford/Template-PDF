@@ -46,8 +46,8 @@ def main() -> None:
     parser = argparse.ArgumentParser(
         description="Create a compressed copy of a built PDF without changing source assets."
     )
-    parser.add_argument("--input", default="dist/template-pack.pdf", type=Path)
-    parser.add_argument("--output", default="dist/template-pack-q85.pdf", type=Path)
+    parser.add_argument("--input", default="dist/base/template-pack.pdf", type=Path)
+    parser.add_argument("--output", default="dist/base/template-pack-q85.pdf", type=Path)
     parser.add_argument("--quality", default=85, type=int)
     args = parser.parse_args()
 

@@ -18,7 +18,8 @@ Then open `http://127.0.0.1:13003`.
 - `src/styles/pack.css`: page layout and print styling.
 - `Design.md`: plain grayscale design direction and CSS variable reference.
 - `src/assets/images/image.jpg`: placeholder image used by the example pages.
-- `scripts/build.py`: builds the full PDF and optimized PDF variants.
+- `scripts/build.py`: builds the base PDF, curated output profiles, and optimized variants.
+- `scripts/curate_pdf.py`: creates curated PDFs from selected pages of the base PDF.
 - `scripts/optimize_pdf.py`: compresses images inside a built PDF.
 - `dist/`: generated PDF outputs.
 
@@ -66,16 +67,46 @@ npm run build
 
 This creates:
 
-- `dist/template-pack.pdf`
-- `dist/template-pack-q60.pdf`
-- `dist/template-pack-q72.pdf`
-- `dist/template-pack-q85.pdf`
+- `dist/base/template-pack.pdf`
+- `dist/version-a/template-pack-version-a.pdf`
+- `dist/version-b/template-pack-version-b.pdf`
 
-The `q60`, `q72`, and `q85` files are PDF-level optimized variants. Source images remain unchanged in `src/assets/`.
+Each output folder also includes `-q60`, `-q72`, and `-q85` PDF-level optimized variants. Source images remain unchanged in `src/assets/`.
+
+## Curated Versions
+
+The template builds one base PDF first, then creates curated versions by copying selected pages into separate folders. This is useful when one source document needs different exports for different readers, contexts, or levels of detail.
+
+Output profiles are configured in `scripts/build.py` in the `PROFILES` map:
+
+- `base`: the full source PDF.
+- `version-a`: generic example version using pages `1-2,4`.
+- `version-b`: generic example version using pages `1,3,4`.
+
+Rename `version-a` and `version-b` to match your own use case. For example, a resume might use audience-specific versions, while a proposal might use short, detailed, or appendix-heavy versions.
+
+Build a single profile:
+
+```sh
+npm run build -- version-a
+npm run build -- version-b
+```
+
+To add a new version, add another profile:
+
+```py
+"proposal": {
+    "pages": "1,3-4",
+    "folder": DIST / "proposal",
+    "basename": "template-pack-proposal",
+},
+```
+
+Use `pages: None` only for the full base PDF. Curated outputs should list the pages to copy from `dist/base/template-pack.pdf`.
 
 ## Other Commands
 
-Build only the full PDF:
+Build only the base PDF:
 
 ```sh
 npm run build:pdf
