@@ -2,6 +2,16 @@
 
 Reusable presentation-style PDF template built with Vivliostyle.
 
+## Quick Start
+
+```sh
+npm install
+python3 -m pip install -r requirements.txt
+npm run dev
+```
+
+Then open `http://127.0.0.1:13003`.
+
 ## Structure
 
 - `src/manuscript/pack.md`: example PDF pages.
@@ -11,6 +21,15 @@ Reusable presentation-style PDF template built with Vivliostyle.
 - `scripts/build.py`: builds the full PDF and optimized PDF variants.
 - `scripts/optimize_pdf.py`: compresses images inside a built PDF.
 - `dist/`: generated PDF outputs.
+
+## Edit
+
+Open the repo in your IDE and work from `src/`:
+
+- Replace the sample pages in `src/manuscript/pack.md`.
+- Adjust foundational tokens and layout rules in `src/styles/pack.css`.
+- Use `Design.md` as the design reference for page size, tokens, typography, and preview behavior.
+- Keep source images in `src/assets/` and reference them from the manuscript.
 
 ## Install
 
@@ -32,6 +51,10 @@ npm run dev
 Then open `http://127.0.0.1:13003`.
 
 The local preview uses `index.html`, which mirrors the sample pages from `src/manuscript/pack.md` and uses the placeholder image in `src/assets/images/image.png`.
+
+## Working With Codex
+
+This template works well with Codex because the browser preview gives fast feedback while you iterate on the manuscript, design tokens, and layout rules. Use Codex to adjust `src/manuscript/pack.md`, refine `src/styles/pack.css`, reload the local preview, and rebuild the final PDF when the layout is ready.
 
 ## Build
 
@@ -72,4 +95,4 @@ npm run optimize:small
 
 ## Notes
 
-Replace the sample copy in `src/manuscript/pack.md`, update the theme in `src/styles/pack.css`, and keep source imagery in `src/assets/`.
+`dist/` is generated output and is ignored by git by default.
