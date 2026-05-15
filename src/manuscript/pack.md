@@ -1,0 +1,72 @@
+---
+title: PDF Template Pack
+author: Template Author
+lang: en
+---
+
+<section class="slide cover">
+  <div class="kicker">Template</div>
+  <h1>PDF Template Pack</h1>
+  <p class="lede">A clean starting point for a presentation-style PDF with reusable page layouts, placeholder imagery, and optimization commands.</p>
+</section>
+
+<section class="slide overview">
+  <div class="kicker">Page map</div>
+  <h2>Use these sample pages as a structure for replacing copy, images, and layout details.</h2>
+  <div class="overview-grid">
+    <div class="overview-card">
+      <span>01</span>
+      <h3>Cover</h3>
+      <p>Introduce the PDF with a clear title and short description.</p>
+    </div>
+    <div class="overview-card">
+      <span>02</span>
+      <h3>Overview</h3>
+      <p>Summarize the sections or key ideas in a compact grid.</p>
+    </div>
+    <div class="overview-card">
+      <span>03</span>
+      <h3>Feature</h3>
+      <p>Pair focused copy with a large visual or placeholder image.</p>
+    </div>
+    <div class="overview-card">
+      <span>04</span>
+      <h3>Closing</h3>
+      <p>End with reusable principles, next steps, or contact details.</p>
+    </div>
+  </div>
+</section>
+
+<section class="slide feature-slide">
+  <div class="feature-copy">
+    <div class="kicker">Example page</div>
+    <h2>Swap this page content for the real material.</h2>
+    <ul>
+      <li>Keep each point short enough to scan quickly.</li>
+      <li>Use the placeholder image while drafting the layout.</li>
+      <li>Replace image sources only after the page structure is stable.</li>
+    </ul>
+  </div>
+  <div class="image-board">
+    <img class="feature-shot" src="../assets/images/image.png" alt="Placeholder page example">
+  </div>
+</section>
+
+<section class="slide closing">
+  <div class="kicker">Closing</div>
+  <h2>Keep the template generic, then specialize the manuscript for each PDF.</h2>
+  <div class="principles">
+    <div class="principle-card">
+      <h3>Source</h3>
+      <p>Write page content in the manuscript file.</p>
+    </div>
+    <div class="principle-card">
+      <h3>Style</h3>
+      <p>Adjust page layout and theme values in the CSS file.</p>
+    </div>
+    <div class="principle-card">
+      <h3>Optimize</h3>
+      <p>Build the full PDF first, then generate compressed variants.</p>
+    </div>
+  </div>
+</section>

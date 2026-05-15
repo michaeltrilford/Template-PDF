@@ -1,0 +1,17 @@
+{
+  "name": "template-pdf",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "python3 -m http.server 13003 --bind 127.0.0.1",
+    "preview": "npm run dev",
+    "build": "python3 scripts/build.py",
+    "build:pdf": "vivliostyle build -o dist/template-pack.pdf",
+    "optimize": "python3 scripts/optimize_pdf.py --input dist/template-pack.pdf --output dist/template-pack-q85.pdf --quality 85",
+    "optimize:small": "python3 scripts/optimize_pdf.py --input dist/template-pack.pdf --output dist/template-pack-q60.pdf --quality 60"
+  },
+  "devDependencies": {
+    "@vivliostyle/cli": "^8.20.0"
+  }
+}

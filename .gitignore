@@ -1,0 +1,5 @@
+dist/*.pdf
+.vivliostyle/
+node_modules/
+.pycache/
+.DS_Store
