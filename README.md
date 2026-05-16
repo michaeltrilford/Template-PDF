@@ -23,14 +23,17 @@ Then open `http://127.0.0.1:13003`.
 - `scripts/optimize_pdf.py`: compresses images inside a built PDF.
 - `dist/`: generated PDF outputs.
 
-## Edit
+## Working With IDE
 
-Open the repo in your IDE and work from `src/`:
-
-- Replace the sample pages in `src/manuscript/pack.md`.
-- Use `Design.md` to inform the CSS variables and theme in `src/styles/pack.css`. It is not required, but it is helpful context when asking Codex to create or adjust a PDF theme.
+- Craft the sample pages in `src/manuscript/pack.md`.
 - Adjust foundational tokens and layout rules in `src/styles/pack.css`.
-- Keep source images in `src/assets/` and reference them from the manuscript.
+- Add source images in `src/assets/` and reference them from the manuscript.
+
+## Working With Codex
+
+If working with Codex, it can help to set the foundation with a `Design.md` that informs the CSS variables and theme in `src/styles/pack.css`. It is not required, but it is useful context when asking Codex to create or adjust a PDF theme.
+
+Codex is also useful for mapping curated assets into `src/manuscript/pack.md`, iterating against the localhost preview, opening the generated PDF, and rebuilding the final output when the layout is ready.
 
 ## Install
 
@@ -52,10 +55,6 @@ npm run dev
 Then open `http://127.0.0.1:13003`.
 
 The local preview uses `index.html`, which mirrors the sample pages from `src/manuscript/pack.md` and uses the placeholder image in `src/assets/images/image.jpg`.
-
-## Working With Codex
-
-This template works well with Codex because the browser preview gives fast feedback while you iterate on the manuscript, design tokens, and layout rules. The workflow is intentionally close to basic HTML and CSS: write the PDF structure in `src/manuscript/pack.md`, style it in `src/styles/pack.css`, reload the local preview, and rebuild the final PDF when the layout is ready.
 
 ## Build
 
