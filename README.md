@@ -8,6 +8,8 @@ This repo has enough context for Codex or similar tools to get the template runn
 
 The rest of this README is technical setup and reference. You do not need to understand all of it to use the template.
 
+---
+
 ## Quick Start: Code
 
 ```sh
