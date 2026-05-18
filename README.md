@@ -2,6 +2,12 @@
 
 Reusable presentation-style PDF template built with Vivliostyle.
 
+## Attention Vibe Coders
+
+This repo has enough context for Codex or similar tools to get the template running for you. Download the ZIP from the GitHub `Code` dropdown, add it to Codex or a similar tool, and ask it to run the repo. From there, you can start prompting changes or craft the files yourself.
+
+The rest of this README is technical setup and reference. You do not need to understand all of it to use the template.
+
 ## Quick Start
 
 ```sh
